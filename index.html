@@ -10,24 +10,26 @@
   <style>
     body {
       font-family: 'Orbitron', sans-serif;
-      background-color: #0a0a0a;
-      color: #e0e0e0;
+      background-color: #0b0f1a;
+      color: #dcdcdc;
     }
-    .gold-text {
-      color: #d4af37;
+    .accent {
+      color: #00eaff; /* cyan neón */
     }
-    .gold-bg {
-      background-color: #d4af37;
+    .accent-bg {
+      background-color: #00eaff;
+      color: #0b0f1a;
     }
     .product-card {
-      background-color: #1a1a1a;
-      border: 1px solid #444;
+      background: linear-gradient(145deg, #111827, #1f2937);
+      border: 1px solid #00eaff;
       border-radius: 1rem;
-      transition: transform 0.2s ease;
+      box-shadow: 0 0 10px #00eaff66;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .product-card:hover {
       transform: scale(1.03);
-      box-shadow: 0 0 10px #d4af37;
+      box-shadow: 0 0 20px #00eaffcc;
     }
   </style>
 </head>
@@ -35,68 +37,41 @@
 
   <!-- ENCABEZADO -->
   <header class="text-center mb-10">
-    <img src="xxx" alt="Logo de la tienda" class="mx-auto w-24 h-24 mb-4 rounded-full border-4 border-yellow-500 shadow-lg">
-    <h1 class="text-5xl font-bold mb-2 gold-text">Tienda Gamer Premium</h1>
-    <p class="text-lg text-gray-400">Tecnología con estilo elegante y rendimiento superior.</p>
+    <img src="xxx" alt="Logo de la tienda" class="mx-auto w-24 h-24 mb-4 rounded-full border-4 border-cyan-400 shadow-lg">
+    <h1 class="text-5xl font-bold mb-2 accent">Tienda Gamer TechnoDark</h1>
+    <p class="text-lg text-gray-400">Tecnología avanzada con un toque de oscuridad elegante.</p>
   </header>
 
   <!-- PRODUCTOS -->
   <section class="max-w-6xl w-full mb-12">
-    <h2 class="text-3xl mb-6 gold-text">Productos Destacados</h2>
+    <h2 class="text-3xl mb-6 accent">Productos Destacados</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
       <!-- Producto 1 -->
       <div class="product-card p-4">
-        <img src="Logia.jpeg" alt="Teclado RGB" class="rounded mb-3 w-full">
-        <h3 class="text-xl font-bold gold-text">Teclado RGB Dorado</h3>
-        <p class="text-sm text-gray-400 mb-2">Iluminación de lujo, switches premium, diseño negro y oro.</p>
-        <span class="text-yellow-400 font-bold text-lg">$129.900 COP</span>
-        <a href="#" class="block mt-3 gold-bg hover:bg-yellow-500 text-black px-4 py-2 rounded-full text-center">Comprar por WhatsApp</a>
+        <img src="xxx" alt="Teclado RGB" class="rounded mb-3 w-full">
+        <h3 class="text-xl font-bold accent">Teclado RGB Phantom</h3>
+        <p class="text-sm text-gray-300 mb-2">Diseño oscuro, retroiluminación cian, respuesta silenciosa.</p>
+        <span class="accent font-bold text-lg">$129.900 COP</span>
+        <a href="#" class="block mt-3 accent-bg hover:opacity-80 px-4 py-2 rounded-full text-center font-semibold">Comprar por WhatsApp</a>
       </div>
 
       <!-- Producto 2 -->
       <div class="product-card p-4">
-        <img src="LOGO" alt="Multitoma gamer" class="rounded mb-3 w-full">
-        <h3 class="text-xl font-bold gold-text">Multitoma Gamer Elegante</h3>
-        <p class="text-sm text-gray-400 mb-2">Con protección dorada, USB y diseño minimalista negro mate.</p>
-        <span class="text-yellow-400 font-bold text-lg">$89.900 COP</span>
-        <a href="#" class="block mt-3 gold-bg hover:bg-yellow-500 text-black px-4 py-2 rounded-full text-center">Comprar por WhatsApp</a>
+        <img src="xxx" alt="Multitoma gamer" class="rounded mb-3 w-full">
+        <h3 class="text-xl font-bold accent">Multitoma Quantum</h3>
+        <p class="text-sm text-gray-300 mb-2">Control por app, diseño sobrio, energía inteligente.</p>
+        <span class="accent font-bold text-lg">$89.900 COP</span>
+        <a href="#" class="block mt-3 accent-bg hover:opacity-80 px-4 py-2 rounded-full text-center font-semibold">Comprar por WhatsApp</a>
       </div>
 
       <!-- Producto 3 -->
       <div class="product-card p-4">
-        <img src="LOGO" alt="Mousepad XL" class="rounded mb-3 w-full">
-        <h3 class="text-xl font-bold gold-text">Mousepad XL Premium</h3>
-        <p class="text-sm text-gray-400 mb-2">Tacto suave, tamaño extendido, borde dorado cosido.</p>
-        <span class="text-yellow-400 font-bold text-lg">$59.900 COP</span>
-        <a href="#" class="block mt-3 gold-bg hover:bg-yellow-500 text-black px-4 py-2 rounded-full text-center">Comprar por WhatsApp</a>
-      </div>
-
-      <!-- Producto 4 -->
-      <div class="product-card p-4">
-        <img src="LOGO" alt="Soporte carro" class="rounded mb-3 w-full">
-        <h3 class="text-xl font-bold gold-text">Soporte Móvil Dorado</h3>
-        <p class="text-sm text-gray-400 mb-2">Base magnética negra con detalles dorados. Elegancia en el carro.</p>
-        <span class="text-yellow-400 font-bold text-lg">$39.900 COP</span>
-        <a href="#" class="block mt-3 gold-bg hover:bg-yellow-500 text-black px-4 py-2 rounded-full text-center">Comprar por WhatsApp</a>
-      </div>
-
-      <!-- Producto 5 -->
-      <div class="product-card p-4">
-        <img src="LOGO" alt="Soporte para PC" class="rounded mb-3 w-full">
-        <h3 class="text-xl font-bold gold-text">Soporte Ergonómico Black & Gold</h3>
-        <p class="text-sm text-gray-400 mb-2">Soporte resistente con altura ajustable y acabado mate metálico.</p>
-        <span class="text-yellow-400 font-bold text-lg">$74.900 COP</span>
-        <a href="#" class="block mt-3 gold-bg hover:bg-yellow-500 text-black px-4 py-2 rounded-full text-center">Comprar por WhatsApp</a>
-      </div>
-
-      <!-- Producto 6 -->
-      <div class="product-card p-4">
-        <img src="LOGO" alt="Multitoma inteligente" class="rounded mb-3 w-full">
-        <h3 class="text-xl font-bold gold-text">Multitoma Inteligente Pro</h3>
-        <p class="text-sm text-gray-400 mb-2">Control remoto, USB, control de energía, diseño dorado moderno.</p>
-        <span class="text-yellow-400 font-bold text-lg">$109.900 COP</span>
-        <a href="#" class="block mt-3 gold-bg hover:bg-yellow-500 text-black px-4 py-2 rounded-full text-center">Comprar por WhatsApp</a>
+        <img src="xxx" alt="Mousepad XL" class="rounded mb-3 w-full">
+        <h3 class="text-xl font-bold accent">Mousepad DarkZone XL</h3>
+        <p class="text-sm text-gray-300 mb-2">Base antideslizante, superficie suave, aura azul.</p>
+        <span class="accent font-bold text-lg">$59.900 COP</span>
+        <a href="#" class="block mt-3 accent-bg hover:opacity-80 px-4 py-2 rounded-full text-center font-semibold">Comprar por WhatsApp</a>
       </div>
 
     </div>
@@ -104,34 +79,33 @@
 
   <!-- TESTIMONIOS -->
   <section class="max-w-4xl w-full mb-10">
-    <h2 class="text-3xl mb-4 gold-text">Lo que dicen nuestros clientes</h2>
+    <h2 class="text-3xl mb-4 accent">Testimonios</h2>
     <div class="space-y-4">
-      <div class="bg-gray-900 p-4 rounded-xl border border-yellow-600 shadow">
-        <p>"El teclado es simplemente hermoso. Negro mate con luces doradas. Elegancia total."</p>
-        <span class="text-sm text-yellow-300">– Mateo, Bogotá</span>
+      <div class="bg-gray-900 p-4 rounded-xl border border-cyan-400 shadow">
+        <p>"Teclado hermoso, silencioso, perfecto para sesiones nocturnas de gaming. 💻✨"</p>
+        <span class="text-sm text-cyan-300">– Camilo, Bogotá</span>
       </div>
-      <div class="bg-gray-900 p-4 rounded-xl border border-yellow-600 shadow">
-        <p>"La multitoma me permite controlar todo desde el celular. ¡Y se ve brutal!"</p>
-        <span class="text-sm text-yellow-300">– Laura, Medellín</span>
+      <div class="bg-gray-900 p-4 rounded-xl border border-cyan-400 shadow">
+        <p>"La multitoma inteligente hace que mi setup parezca una nave. Brutal."</p>
+        <span class="text-sm text-cyan-300">– Natalia, Medellín</span>
       </div>
     </div>
   </section>
 
   <!-- COMENTARIOS -->
   <section class="max-w-4xl w-full mb-10">
-    <h2 class="text-3xl mb-4 gold-text">Déjanos tu comentario</h2>
+    <h2 class="text-3xl mb-4 accent">Déjanos tu comentario</h2>
     <form class="space-y-4">
-      <input type="text" placeholder="Tu nombre" class="w-full p-3 rounded bg-gray-800 text-white border border-yellow-500"/>
-      <textarea placeholder="Tu comentario..." class="w-full p-3 rounded bg-gray-800 text-white border border-yellow-500" rows="4"></textarea>
-      <button type="submit" class="gold-bg hover:bg-yellow-500 px-6 py-2 rounded-full text-black font-bold">
-        Enviar
-      </button>
+      <input type="text" placeholder="Tu nombre" class="w-full p-3 rounded bg-gray-800 text-white border border-cyan-400"/>
+      <textarea placeholder="Tu comentario..." class="w-full p-3 rounded bg-gray-800 text-white border border-cyan-400" rows="4"></textarea>
+      <button type="submit" class="accent-bg hover:opacity-90 px-6 py-2 rounded-full font-bold">Enviar</button>
     </form>
   </section>
 
   <!-- FOOTER -->
   <footer class="text-center mt-auto text-sm text-gray-500">
-    © 2025 Tienda Gamer Premium. Tecnología con estilo.
+    © 2025 Tienda Gamer TechnoDark. Con estilo oscuro y tecnología de punta.
   </footer>
+
 </body>
 </html>
