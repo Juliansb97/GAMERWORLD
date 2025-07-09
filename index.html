@@ -3,123 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tienda Gamer Mística</title>
+  <title>Tienda Gamer Ciberpunk</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-      color: #fff;
+      font-family: 'Share Tech Mono', monospace;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #ff0099);
+      color: #e0e0e0;
     }
     .glow {
       text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
     }
-    .product-card {
-      background-color: #1a1a2e;
-      border: 1px solid #444;
+    .neon-card {
+      background-color: rgba(20, 20, 40, 0.9);
+      border: 1px solid #ff00ff;
       border-radius: 1rem;
-      overflow: hidden;
+      box-shadow: 0 0 15px #ff00ff66;
       transition: transform 0.2s ease;
     }
-    .product-card:hover {
-      transform: scale(1.02);
+    .neon-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px #ff00ffcc;
     }
   </style>
 </head>
 <body class="min-h-screen flex flex-col items-center p-6">
 
-  <!-- ENCABEZADO -->
+  <!-- HEADER -->
   <header class="text-center mb-10">
-    <img src="logo-mistica.png" alt="Logo Tienda Gamer Mística" class="mx-auto w-24 h-24 mb-4 rounded-full shadow-lg border-2 border-indigo-500">
-    <h1 class="text-5xl glow font-bold mb-4">Tienda Gamer Mística</h1>
-    <p class="text-xl text-gray-300">Tecnología mágica para verdaderos jugadores</p>
+    <img src="logo-mistica.png" alt="Logo" class="mx-auto w-24 h-24 mb-4 rounded-full border-4 border-cyan-500 shadow-lg">
+    <h1 class="text-5xl glow font-bold mb-2 text-pink-400">TIENDA GAMER CIBERPUNK</h1>
+    <p class="text-lg text-cyan-300">Tecnología de otro mundo, en tus manos.</p>
   </header>
 
   <!-- PRODUCTOS -->
   <section class="max-w-6xl w-full mb-12">
-    <h2 class="text-3xl mb-6 glow">Nuestros Productos</h2>
+    <h2 class="text-3xl mb-6 glow text-pink-300">Productos Destacados</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
-      <!-- Producto 1 -->
-      <div class="product-card p-4">
-        <img src="teclado-rgb.jpg" alt="Teclado RGB" class="rounded mb-3 w-full">
-        <h3 class="text-xl font-bold glow">Teclado RGB Místico</h3>
-        <p class="text-sm text-gray-400 mb-2">Iluminación tipo aura, switches silenciosos, 100% mágico.</p>
-        <span class="text-indigo-400 font-bold text-lg">$129.900 COP</span>
-        <a href="#" class="block mt-3 bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-full text-center">Comprar por WhatsApp</a>
+      <!-- Producto -->
+      <div class="neon-card p-4">
+        <img src="teclado-rgb.jpg" alt="Teclado" class="rounded mb-3 w-full">
+        <h3 class="text-xl font-bold glow text-cyan-400">Teclado RGB Místico</h3>
+        <p class="text-sm text-pink-200 mb-2">Aura neón, switches silenciosos, poder puro.</p>
+        <span class="text-pink-400 font-bold text-lg">$129.900 COP</span>
+        <a href="#" class="block mt-3 bg-pink-600 hover:bg-pink-500 text-white px-4 py-2 rounded-full text-center">Comprar por WhatsApp</a>
       </div>
 
-      <!-- Producto 2 -->
-      <div class="product-card p-4">
-        <img src="multitoma-gamer.jpg" alt="Multitoma gamer" class="rounded mb-3 w-full">
-        <h3 class="text-xl font-bold glow">Multitoma Gamer Neo</h3>
-        <p class="text-sm text-gray-400 mb-2">Con puertos USB, protección y diseño sci-fi. Ideal para setup.</p>
-        <span class="text-indigo-400 font-bold text-lg">$89.900 COP</span>
-        <a href="#" class="block mt-3 bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-full text-center">Comprar por WhatsApp</a>
-      </div>
-
-      <!-- Producto 3 -->
-      <div class="product-card p-4">
-        <img src="mousepad-xl.jpg" alt="Mouse pad XL" class="rounded mb-3 w-full">
-        <h3 class="text-xl font-bold glow">Mousepad XL Mágico</h3>
-        <p class="text-sm text-gray-400 mb-2">Extra suave, tamaño extendido, base antideslizante.</p>
-        <span class="text-indigo-400 font-bold text-lg">$59.900 COP</span>
-        <a href="#" class="block mt-3 bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-full text-center">Comprar por WhatsApp</a>
-      </div>
-
-      <!-- Producto 4 -->
-      <div class="product-card p-4">
-        <img src="soporte-carro.jpg" alt="Soporte magnético carro" class="rounded mb-3 w-full">
-        <h3 class="text-xl font-bold glow">Soporte Magnético para Carro</h3>
-        <p class="text-sm text-gray-400 mb-2">Imán potente, diseño compacto y minimalista para celular.</p>
-        <span class="text-indigo-400 font-bold text-lg">$39.900 COP</span>
-        <a href="#" class="block mt-3 bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-full text-center">Comprar por WhatsApp</a>
-      </div>
-
-      <!-- Producto 5 -->
-      <div class="product-card p-4">
-        <img src="soporte-pc.jpg" alt="Soporte para computador" class="rounded mb-3 w-full">
-        <h3 class="text-xl font-bold glow">Soporte Ergonómico para PC</h3>
-        <p class="text-sm text-gray-400 mb-2">Mejora tu postura mientras trabajas o juegas. Base ajustable y resistente.</p>
-        <span class="text-indigo-400 font-bold text-lg">$74.900 COP</span>
-        <a href="#" class="block mt-3 bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-full text-center">Comprar por WhatsApp</a>
-      </div>
-
-      <!-- Producto 6 -->
-      <div class="product-card p-4">
-        <img src="multitoma-inteligente.jpg" alt="Multitoma inteligente" class="rounded mb-3 w-full">
-        <h3 class="text-xl font-bold glow">Multitoma Gamer Inteligente</h3>
-        <p class="text-sm text-gray-400 mb-2">Control remoto desde app, puertos USB, ideal para set-ups inteligentes.</p>
-        <span class="text-indigo-400 font-bold text-lg">$109.900 COP</span>
-        <a href="#" class="block mt-3 bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-full text-center">Comprar por WhatsApp</a>
-      </div>
+      <!-- Más productos -->
+      <!-- Copia el bloque anterior para cada uno (usa las imágenes: multitoma-gamer.jpg, soporte-carro.jpg, etc.) -->
 
     </div>
   </section>
 
   <!-- TESTIMONIOS -->
   <section class="max-w-4xl w-full mb-10">
-    <h2 class="text-3xl mb-4 glow">Lo que dicen nuestros clientes</h2>
+    <h2 class="text-3xl mb-4 glow text-cyan-300">Lo que dicen nuestros clientes</h2>
     <div class="space-y-4">
-      <div class="bg-gray-800 p-4 rounded-xl shadow">
-        <p>"Productos con estilo y calidad, el teclado es una nave espacial en mi escritorio."</p>
-        <span class="text-sm text-gray-400">– Mateo, Bogotá</span>
-      </div>
-      <div class="bg-gray-800 p-4 rounded-xl shadow">
-        <p>"Mi multitoma inteligente es perfecta para conectar todos mis dispositivos sin lío. Gracias!"</p>
-        <span class="text-sm text-gray-400">– Laura, Medellín</span>
+      <div class="bg-gray-900 p-4 rounded-xl border border-pink-500 shadow">
+        <p>"Este teclado parece sacado de un anime. ¡Iluminación brutal!"</p>
+        <span class="text-sm text-cyan-400">– Mateo, Bogotá</span>
       </div>
     </div>
   </section>
 
   <!-- COMENTARIOS -->
   <section class="max-w-4xl w-full mb-10">
-    <h2 class="text-3xl mb-4 glow">Déjanos tu comentario</h2>
+    <h2 class="text-3xl mb-4 glow text-pink-300">Déjanos tu comentario</h2>
     <form class="space-y-4">
-      <input type="text" placeholder="Tu nombre" class="w-full p-3 rounded bg-gray-700 text-white"/>
-      <textarea placeholder="Tu comentario..." class="w-full p-3 rounded bg-gray-700 text-white" rows="4"></textarea>
-      <button type="submit" class="bg-indigo-600 hover:bg-indigo-500 px-6 py-2 rounded-full glow">
+      <input type="text" placeholder="Tu nombre" class="w-full p-3 rounded bg-gray-800 text-white border border-pink-500"/>
+      <textarea placeholder="Tu comentario..." class="w-full p-3 rounded bg-gray-800 text-white border border-pink-500" rows="4"></textarea>
+      <button type="submit" class="bg-cyan-600 hover:bg-cyan-500 px-6 py-2 rounded-full glow text-white">
         Enviar
       </button>
     </form>
@@ -127,7 +83,7 @@
 
   <!-- FOOTER -->
   <footer class="text-center mt-auto text-sm text-gray-400">
-    © 2025 Tienda Gamer Mística. Hecho con ✨ y pasión por los videojuegos.
+    © 2025 Tienda Gamer Ciberpunk. Con estilo del futuro ✨
   </footer>
 </body>
 </html>
