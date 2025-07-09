@@ -15,6 +15,16 @@
     .glow {
       text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
     }
+    .product-card {
+      background-color: #1a1a2e;
+      border: 1px solid #444;
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.02);
+    }
   </style>
 </head>
 <body class="min-h-screen flex flex-col items-center p-6">
@@ -23,19 +33,38 @@
   <header class="text-center mb-10">
     <h1 class="text-5xl glow font-bold mb-4">Tienda Gamer Mística</h1>
     <p class="text-xl text-gray-300">Tecnología mágica para verdaderos jugadores</p>
-    <button class="mt-6 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-full text-white font-bold glow">
-      Ver Productos
-    </button>
   </header>
 
-  <!-- BENEFICIOS -->
-  <section class="max-w-4xl w-full mb-10">
-    <h2 class="text-3xl mb-4 glow">¿Por qué elegirnos?</h2>
-    <ul class="space-y-3 text-lg text-gray-300">
-      <li>✨ Productos con diseño futurista y rendimiento pro</li>
-      <li>🚀 Envíos rápidos a toda Colombia</li>
-      <li>🛡️ Garantía directa y soporte personalizado</li>
-    </ul>
+  <!-- PRODUCTOS -->
+  <section class="max-w-6xl w-full mb-12">
+    <h2 class="text-3xl mb-6 glow">Nuestros Productos</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      
+      <!-- Producto 1 -->
+      <div class="product-card p-4">
+        <img src="https://via.placeholder.com/300x200" alt="Teclado RGB" class="rounded mb-3 w-full">
+        <h3 class="text-xl font-bold glow">Teclado RGB Místico</h3>
+        <p class="text-sm text-gray-400 mb-2">Iluminación tipo aura, switches silenciosos, 100% mágico.</p>
+        <span class="text-indigo-400 font-bold text-lg">$129.900 COP</span>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="product-card p-4">
+        <img src="https://via.placeholder.com/300x200" alt="Multitoma gamer" class="rounded mb-3 w-full">
+        <h3 class="text-xl font-bold glow">Multitoma Gamer Neo</h3>
+        <p class="text-sm text-gray-400 mb-2">Con puertos USB, protección y diseño sci-fi. Ideal para setup.</p>
+        <span class="text-indigo-400 font-bold text-lg">$89.900 COP</span>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="product-card p-4">
+        <img src="https://via.placeholder.com/300x200" alt="Mouse pad XL" class="rounded mb-3 w-full">
+        <h3 class="text-xl font-bold glow">Mousepad XL Mágico</h3>
+        <p class="text-sm text-gray-400 mb-2">Extra suave, tamaño extendido, base antideslizante.</p>
+        <span class="text-indigo-400 font-bold text-lg">$59.900 COP</span>
+      </div>
+
+    </div>
   </section>
 
   <!-- TESTIMONIOS -->
@@ -43,12 +72,8 @@
     <h2 class="text-3xl mb-4 glow">Lo que dicen nuestros clientes</h2>
     <div class="space-y-4">
       <div class="bg-gray-800 p-4 rounded-xl shadow">
-        <p>"La iluminación de los periféricos es una locura 🔥, parece magia. Volveré a comprar."</p>
-        <span class="text-sm text-gray-400">– Camilo, Bogotá</span>
-      </div>
-      <div class="bg-gray-800 p-4 rounded-xl shadow">
-        <p>"Mi nueva silla gamer parece sacada de otro universo. Excelente calidad."</p>
-        <span class="text-sm text-gray-400">– Valentina, Medellín</span>
+        <p>"Los productos tienen una estética brutal, parecen sacados de un juego de ciencia ficción."</p>
+        <span class="text-sm text-gray-400">– Mateo, Bogotá</span>
       </div>
     </div>
   </section>
