@@ -1,111 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tienda Gamer Elegante</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VORTEKS Supplements</title>
   <style>
     body {
-      font-family: 'Orbitron', sans-serif;
-      background-color: #0b0f1a;
-      color: #dcdcdc;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #111;
+      color: #fdfdfd;
     }
-    .accent {
-      color: #00eaff; /* cyan neón */
+    header {
+      background-color: #000;
+      padding: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
     }
-    .accent-bg {
-      background-color: #00eaff;
-      color: #0b0f1a;
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1rem;
+      border-bottom: 1px solid #333;
     }
-    .product-card {
-      background: linear-gradient(145deg, #111827, #1f2937);
-      border: 1px solid #00eaff;
-      border-radius: 1rem;
-      box-shadow: 0 0 10px #00eaff66;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .section img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
     }
-    .product-card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 20px #00eaffcc;
+    .section h2 {
+      margin-top: 1.5rem;
+      font-size: 1.8rem;
+      color: #f33;
+    }
+    .section p {
+      max-width: 700px;
+      text-align: center;
+      font-size: 1rem;
+      color: #ccc;
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
-<body class="min-h-screen flex flex-col items-center p-6">
+<body>
+  <header>VORTEKS SUPPLEMENTS</header>
 
-  <!-- ENCABEZADO -->
-  <header class="text-center mb-10">
-    <img src="LOGO" alt="Logo de la tienda" class="mx-auto w-24 h-24 mb-4 rounded-full border-4 border-cyan-400 shadow-lg">
-    <h1 class="text-5xl font-bold mb-2 accent">Tienda Gamer TechnoDark</h1>
-    <p class="text-lg text-gray-400">Tecnología avanzada con un toque de oscuridad elegante.</p>
-  </header>
+  <div class="section">
+    <img src="/path/to/BCAA.png" alt="BCAA T-shirt Design">
+    <h2>BCAA – POTENCIA AVIARES</h2>
+    <p>Diseño inspirado en la fuerza del águila. Perfecto para quienes buscan rendimiento explosivo y recuperación rápida.</p>
+  </div>
 
-  <!-- PRODUCTOS -->
-  <section class="max-w-6xl w-full mb-12">
-    <h2 class="text-3xl mb-6 accent">Productos Destacados</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+  <div class="section">
+    <img src="/path/to/CREATINE.png" alt="Creatine T-shirt Design">
+    <h2>CREATINA – VENENO DE PODER</h2>
+    <p>Con una cobra musculosa, esta camiseta representa fuerza imparable y determinación pura. Ideal para entrenamientos intensos.</p>
+  </div>
 
-      <!-- Producto 1 -->
-      <div class="product-card p-4">
-        <img src="xxx" alt="Teclado RGB" class="rounded mb-3 w-full">
-        <h3 class="text-xl font-bold accent">Teclado RGB Phantom</h3>
-        <p class="text-sm text-gray-300 mb-2">Diseño oscuro, retroiluminación cian, respuesta silenciosa.</p>
-        <span class="accent font-bold text-lg">$129.900 COP</span>
-        <a href="#" class="block mt-3 accent-bg hover:opacity-80 px-4 py-2 rounded-full text-center font-semibold">Comprar por WhatsApp</a>
-      </div>
+  <div class="section">
+    <img src="/path/to/PRE%20ENTRENO.png" alt="Preentreno T-shirt Design">
+    <h2>PREENTRENO – FUEGO INTERIOR</h2>
+    <p>Con un dragón que escupe fuego, este diseño captura la energía cruda que necesitas antes de cada entrenamiento.</p>
+  </div>
 
-      <!-- Producto 2 -->
-      <div class="product-card p-4">
-        <img src="xxx" alt="Multitoma gamer" class="rounded mb-3 w-full">
-        <h3 class="text-xl font-bold accent">Multitoma Quantum</h3>
-        <p class="text-sm text-gray-300 mb-2">Control por app, diseño sobrio, energía inteligente.</p>
-        <span class="accent font-bold text-lg">$89.900 COP</span>
-        <a href="#" class="block mt-3 accent-bg hover:opacity-80 px-4 py-2 rounded-full text-center font-semibold">Comprar por WhatsApp</a>
-      </div>
+  <div class="section">
+    <img src="/path/to/PROTEINA.png" alt="Proteina T-shirt Design">
+    <h2>PROTEÍNA – FURIA BESTIAL</h2>
+    <p>El hombre lobo encarnando el poder salvaje para construir músculo y resistencia. Imposible pasar desapercibido.</p>
+  </div>
 
-      <!-- Producto 3 -->
-      <div class="product-card p-4">
-        <img src="xxx" alt="Mousepad XL" class="rounded mb-3 w-full">
-        <h3 class="text-xl font-bold accent">Mousepad DarkZone XL</h3>
-        <p class="text-sm text-gray-300 mb-2">Base antideslizante, superficie suave, aura azul.</p>
-        <span class="accent font-bold text-lg">$59.900 COP</span>
-        <a href="#" class="block mt-3 accent-bg hover:opacity-80 px-4 py-2 rounded-full text-center font-semibold">Comprar por WhatsApp</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- TESTIMONIOS -->
-  <section class="max-w-4xl w-full mb-10">
-    <h2 class="text-3xl mb-4 accent">Testimonios</h2>
-    <div class="space-y-4">
-      <div class="bg-gray-900 p-4 rounded-xl border border-cyan-400 shadow">
-        <p>"Teclado hermoso, silencioso, perfecto para sesiones nocturnas de gaming. 💻✨"</p>
-        <span class="text-sm text-cyan-300">– Camilo, Bogotá</span>
-      </div>
-      <div class="bg-gray-900 p-4 rounded-xl border border-cyan-400 shadow">
-        <p>"La multitoma inteligente hace que mi setup parezca una nave. Brutal."</p>
-        <span class="text-sm text-cyan-300">– Natalia, Medellín</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMENTARIOS -->
-  <section class="max-w-4xl w-full mb-10">
-    <h2 class="text-3xl mb-4 accent">Déjanos tu comentario</h2>
-    <form class="space-y-4">
-      <input type="text" placeholder="Tu nombre" class="w-full p-3 rounded bg-gray-800 text-white border border-cyan-400"/>
-      <textarea placeholder="Tu comentario..." class="w-full p-3 rounded bg-gray-800 text-white border border-cyan-400" rows="4"></textarea>
-      <button type="submit" class="accent-bg hover:opacity-90 px-6 py-2 rounded-full font-bold">Enviar</button>
-    </form>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="text-center mt-auto text-sm text-gray-500">
-    © 2025 Tienda Gamer TechnoDark. Con estilo oscuro y tecnología de punta.
-  </footer>
-
+  <footer>© 2025 VORTEKS. Todos los derechos reservados.</footer>
 </body>
 </html>
