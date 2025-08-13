@@ -1,4 +1,4 @@
-/* Fondo general */
+/* Fondo general con Logia.jpeg */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -16,8 +16,8 @@ body {
   width: 100%;
 }
 
-/* Forzar solo las imágenes de productos a mostrar Logia.jpeg */
-.product img {
+/* Forzar todas las imágenes a Logia.jpeg */
+img {
   content: url('Logia.jpeg');
   object-fit: contain;
 }
