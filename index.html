@@ -3,81 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VORTEKS Supplements</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #111;
-      color: #fdfdfd;
-    }
-    header {
-      background-color: #000;
-      padding: 1rem;
-      text-align: center;
-      font-size: 2rem;
-      font-weight: bold;
-    }
-    .section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 3rem 1rem;
-      border-bottom: 1px solid #333;
-    }
-    .section img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
-    }
-    .section h2 {
-      margin-top: 1.5rem;
-      font-size: 1.8rem;
-      color: #f33;
-    }
-    .section p {
-      max-width: 700px;
-      text-align: center;
-      font-size: 1rem;
-      color: #ccc;
-    }
-    footer {
-      background-color: #000;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #888;
-    }
-  </style>
+  <title>SUPLEMENTOS VORTEKS</title>
+  <link rel="icon" type="image/png" href="LOGO.png">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="carrito.js"></script>
 </head>
 <body>
-  <header>VORTEKS SUPPLEMENTS</header>
 
-  <div class="section">
-    <img src="/path/to/BCAA.png" alt="BCAA T-shirt Design">
-    <h2>BCAA – POTENCIA AVIARES</h2>
-    <p>Diseño inspirado en la fuerza del águila. Perfecto para quienes buscan rendimiento explosivo y recuperación rápida.</p>
+<div class="overlay">
+  <!-- Header -->
+  <header class="header">
+    <img src="LOGO.png" alt="Logo de VORTEKS Suplementos" class="logo">
+    <h1>VORTEKS Suplementos</h1>
+  </header>
+
+  <!-- Beneficios -->
+  <section class="benefits">
+    <div class="card">
+      <h2>Potencia tu rendimiento</h2>
+      <p>Suplementos pensados para quienes entrenan con fuerza y pasión.</p>
+    </div>
+    <div class="card">
+      <h2>Formatos innovadores</h2>
+      <p>Gomitas con ingredientes efectivos, cómodas de consumir.</p>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <section class="products">
+    <h2>Nuestros Productos</h2>
+    <div class="grid">
+      <div class="product">
+        <a href="creatina.html"><img src="CREATINE.png" alt="Creatina VORTEKS"></a>
+      </div>
+      <div class="product">
+        <a href="proteina.html"><img src="PROTEINA.png" alt="Proteína VORTEKS"></a>
+      </div>
+      <div class="product">
+        <a href="energizante.html"><img src="ENERGIZANTE.png" alt="Energizante VORTEKS"></a>
+      </div>
+      <div class="product">
+        <a href="bcaa.html"><img src="BCAA.png" alt="BCAA VORTEKS"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos -->
+  <section class="videos">
+    <h2>Entrena con Nosotros</h2>
+    <p>Mira cómo se entrena nuestro equipo con pasión, fuerza y disciplina.</p>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed/pa78ae4qwYE" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/def456" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/ghi789" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="testimonials">
+    <h2>Testimonios</h2>
+    <blockquote>
+      "Con VORTEKS mejoré mi rendimiento al 100%. Las gomitas son lo mejor que he probado."
+      <span>— Daniel F.</span>
+    </blockquote>
+    <blockquote>
+      "Ya no olvido tomar mis suplementos. ¡Saben increíble y funcionan!"
+      <span>— Laura M.</span>
+    </blockquote>
+  </section>
+
+  <!-- Contacto -->
+  <section class="contact">
+    <h2>Contáctanos</h2>
+    <form onsubmit="return validarFormulario(event)">
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea placeholder="Mensaje" rows="4" required></textarea>
+      <button>Enviar</button>
+    </form>
+  </section>
+
+  <!-- Botón carrito -->
+  <button onclick="toggleCarrito()" class="cart-button">🛒</button>
+
+  <!-- Carrito flotante -->
+  <div id="carrito" class="cart">
+    <h3>Carrito de Compras</h3>
+    <div id="carrito-items" class="cart-items"></div>
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="carrito-total">$0</span>
+    </div>
+    <button onclick="vaciarCarrito()" class="clear-cart">Vaciar carrito</button>
   </div>
 
-  <div class="section">
-    <img src="/path/to/CREATINE.png" alt="Creatine T-shirt Design">
-    <h2>CREATINA – VENENO DE PODER</h2>
-    <p>Con una cobra musculosa, esta camiseta representa fuerza imparable y determinación pura. Ideal para entrenamientos intensos.</p>
-  </div>
+  <!-- WhatsApp -->
+  <a href="https://wa.me/573133732803?text=Hola%20quiero%20más%20información%20sobre%20sus%20productos" target="_blank" class="whatsapp">📨</a>
 
-  <div class="section">
-    <img src="/path/to/PRE%20ENTRENO.png" alt="Preentreno T-shirt Design">
-    <h2>PREENTRENO – FUEGO INTERIOR</h2>
-    <p>Con un dragón que escupe fuego, este diseño captura la energía cruda que necesitas antes de cada entrenamiento.</p>
-  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 VORTEKS. Todos los derechos reservados.
+  </footer>
+</div>
 
-  <div class="section">
-    <img src="/path/to/PROTEINA.png" alt="Proteina T-shirt Design">
-    <h2>PROTEÍNA – FURIA BESTIAL</h2>
-    <p>El hombre lobo encarnando el poder salvaje para construir músculo y resistencia. Imposible pasar desapercibido.</p>
-  </div>
-
-  <footer>© 2025 VORTEKS. Todos los derechos reservados.</footer>
 </body>
 </html>
