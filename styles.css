@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-/* Forzar todas las imágenes a Logia.jpeg */
+/* Todas las imágenes forzadas a Logia.jpeg */
 img {
   content: url('Logia.jpeg');
   object-fit: contain;
